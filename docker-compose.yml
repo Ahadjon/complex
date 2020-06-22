@@ -56,5 +56,5 @@ services:
             context: ./worker
         volumes:
             - /app/node_modules
-            - ./workdir:/app    
+            - ./worker:/app    
    
