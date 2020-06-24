@@ -22,4 +22,17 @@ after_success:
     - docker push ahatajon/multi-nginx
     - docker push ahatajon/multi-server
     - docker push ahatajon/multi-worker
+
+deploy:
+    edge: true
+    provider: elasticbeanstalk
+    region: us-east-1
+    app: complex
+    env: Complex-env 
+    bucket_name: elasticbeanstalk-us-east-1-014588499640
+    bucket_path: complex
+    on: 
+        branch: master
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY    
     
