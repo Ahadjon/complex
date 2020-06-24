@@ -17,6 +17,7 @@ function App() {
          <div>
            <Route exact path='/' component={Fib}/>
            <Route path='/otherpage' component={OtherPage} />
+           <h1> YEAH my first AWS elasticbeanstalk deployment working!!!</h1>
          </div>
         </header>
       </div>
